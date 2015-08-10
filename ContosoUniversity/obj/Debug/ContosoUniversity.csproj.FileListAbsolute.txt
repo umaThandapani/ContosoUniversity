@@ -27,3 +27,4 @@ C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\Co
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\Newtonsoft.Json.xml
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.dll
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.pdb
+C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csprojResolveAssemblyReference.cache
