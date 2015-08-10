@@ -15,7 +15,7 @@ namespace ContosoUniversity.Controllers
     {
         private SchoolContext db = new SchoolContext();
 
-        // GET: Student
+         //GET: Student
         public ActionResult Index()
         {
             return View(db.Students.ToList());
