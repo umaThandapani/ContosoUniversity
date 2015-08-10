@@ -2,6 +2,8 @@ C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\Co
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\ContosoUniversity.dll
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\ContosoUniversity.pdb
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\Antlr3.Runtime.dll
+C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\EntityFramework.dll
+C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\EntityFramework.SqlServer.dll
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\Newtonsoft.Json.dll
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\System.Web.Helpers.dll
@@ -12,6 +14,8 @@ C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\Co
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\System.Web.WebPages.dll
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\System.Web.WebPages.Razor.dll
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\WebGrease.dll
+C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\EntityFramework.xml
+C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\EntityFramework.SqlServer.xml
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\System.Web.Helpers.xml
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\System.Web.Mvc.xml
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\System.Web.Optimization.xml
@@ -21,10 +25,5 @@ C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\Co
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\System.Web.WebPages.Razor.xml
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\Antlr3.Runtime.pdb
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\Newtonsoft.Json.xml
-C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csprojResolveAssemblyReference.cache
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.dll
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.pdb
-C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\EntityFramework.dll
-C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\EntityFramework.SqlServer.dll
-C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\EntityFramework.xml
-C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\EntityFramework.SqlServer.xml
