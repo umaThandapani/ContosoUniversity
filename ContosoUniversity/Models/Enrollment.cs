@@ -5,10 +5,10 @@ using System.Text;
 
 namespace ContosoUniversity.Models
 {
-    class Enrollment
+    //class Enrollment
     
-    {
-    }
+    //{
+    //}
 
     public enum Grade
     {
