@@ -9,6 +9,16 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Find by Name: @Html.TextBox("SearchString")
+        <input type="submit" value="Search" />
+    </p>
+    
+}
+
 <table class="table">
     
     @*</tr><tr>
@@ -22,6 +32,8 @@
             @Html.DisplayNameFor(model => model.EnrollmentDate)
         </th>
         <th></th>*@
+
+
 
     <tr>
         <th>
