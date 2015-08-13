@@ -42,6 +42,25 @@ namespace ContosoUniversity.DAL
             base.ScalarExecuted(command, interceptionContext);
         }
 
+        public override void NonQueryExecuting(DbCommand command, DbCommandInterceptionContext<int> interceptionContext)
+{
+base.NonQueryExecuting(command, interceptionContext);
+_stopwatch.Restart();
+}
+public override void NonQueryExecuted(DbCommand command, DbCommandInterceptionContext<int> interceptionContext)
+{
+_stopwatch.Stop();
+if (interceptionContext.Exception != null)
+{
+    _logger.Error(interceptionContext.Exception, "Error executing command: {0}", command.CommandText);
+}
+else
+{
+    _logger.TraceApi("SQL Database", "SchoolInterceptor.NonQueryExecuted", _stopwatch.Elapsed, "Command: {0}: ", command.CommandText);
+}
+base.NonQueryExecuted(command, interceptionContext);
+}
+
         public override void ReaderExecuting(DbCommand command, DbCommandInterceptionContext<DbDataReader> interceptionContext)
         {
             base.ReaderExecuting(command, interceptionContext);
