@@ -34,3 +34,5 @@ C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\Co
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\bin\PagedList.Mvc.xml
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.InitialCreate.resources
 C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.csproj.GenerateResource.Cache
+C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.MaxLengthOnNames.resources
+C:\Users\Ezhilventhan\Documents\Visual Studio 2013\Projects\ContosoUniversity\ContosoUniversity\obj\Debug\ContosoUniversity.Migrations.ColumnFirstName.resources
