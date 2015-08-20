@@ -24,7 +24,7 @@ namespace ContosoUniversity.Controllers
         //    return View(instructors.ToList());
         //}
         // GET: Instructor
-        public ActionResult Index (int? id, int? courseID)
+        public ActionResult Index(int? id, int? courseID)
         {
             var viewModel = new InstructorIndexData();
             viewModel.Instructors = db.Instructors
@@ -42,13 +42,13 @@ namespace ContosoUniversity.Controllers
                 ViewBag.CourseID = courseID.Value;
                 // Lazy loading 
                 //viewModel.Enrollments = viewModel.Courses.Where( x => x.CourseID == courseID).Single().Enrollments;
-               
+
                 // Explicit loading
-                
+
                 var selectedCourse = viewModel.Courses.Where(x => x.CourseID == courseID).Single(); db.Entry(selectedCourse).Collection(x => x.Enrollments).Load();
-             
-               
-              
+
+
+
                 foreach (Enrollment enrollment in selectedCourse.Enrollments) { db.Entry(enrollment).Reference(x => x.Student).Load(); }
                 viewModel.Enrollments = selectedCourse.Enrollments;
 
@@ -116,21 +116,22 @@ namespace ContosoUniversity.Controllers
         }
 
 
-        private void PopulateAssignedCourseData(Instructor instructor) { 
+        private void PopulateAssignedCourseData(Instructor instructor)
+        {
             var allCourses = db.Courses;
             var instructorCourses = new HashSet<int>(instructor.Courses.Select(c => c.CourseID));
-            var viewModel = new List<AssignedCourseData>(); 
+            var viewModel = new List<AssignedCourseData>();
             foreach (var course in allCourses)
             {
                 viewModel.Add(new AssignedCourseData
-                { 
-            CourseID = course.CourseID, 
-            Title = course.Title, 
-            Assigned = instructorCourses.Contains(course.CourseID)
-                }); 
+                {
+                    CourseID = course.CourseID,
+                    Title = course.Title,
+                    Assigned = instructorCourses.Contains(course.CourseID)
+                });
             }
-            
-            ViewBag.Courses = viewModel; 
+
+            ViewBag.Courses = viewModel;
         }
 
 
@@ -189,7 +190,32 @@ namespace ContosoUniversity.Controllers
             return View(instructorToUpdate);
         }
 
-        private void UpdateInstructorCourses(string[] selectedCourses, Instructor instructorToUpdate) { if (selectedCourses == null) { instructorToUpdate.Courses = new List<Course>(); return; } var selectedCoursesHS = new HashSet<string>(selectedCourses); var instructorCourses = new HashSet<int>(instructorToUpdate.Courses.Select(c => c.CourseID)); foreach (var course in db.Courses) { if (selectedCoursesHS.Contains(course.CourseID.ToString())) { if (!instructorCourses.Contains(course.CourseID)) { instructorToUpdate.Courses.Add(course); } } else { if (instructorCourses.Contains(course.CourseID)) { instructorToUpdate.Courses.Remove(course); } } } }
+        private void UpdateInstructorCourses(string[] selectedCourses, Instructor instructorToUpdate)
+        {
+            if (selectedCourses == null)
+            {
+                instructorToUpdate.Courses = new List<Course>(); return;
+            }
+            var selectedCoursesHS = new HashSet<string>(selectedCourses);
+            var instructorCourses = new HashSet<int>(instructorToUpdate.Courses.Select(c => c.CourseID));
+            foreach (var course in db.Courses)
+            {
+                if (selectedCoursesHS.Contains(course.CourseID.ToString()))
+                {
+                    if (!instructorCourses.Contains(course.CourseID))
+                    {
+                        instructorToUpdate.Courses.Add(course);
+                    }
+                }
+                else
+                {
+                    if (instructorCourses.Contains(course.CourseID))
+                    {
+                        instructorToUpdate.Courses.Remove(course);
+                    }
+                }
+            }
+        }
         // GET: Instructor/Delete/5
         public ActionResult Delete(int? id)
         {
