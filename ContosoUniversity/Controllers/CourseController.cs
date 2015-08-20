@@ -83,7 +83,7 @@ public ActionResult Create ([Bind(Include = "CourseID,Title,Credits,DepartmentID
         
         return View(course);
     }
- [HttpPost]
+[HttpPost]
 [ValidateAntiForgeryToken] 
 
         public ActionResult Edit([Bind(Include = "CourseID,Title,Credits,DepartmentID")]Course course)
